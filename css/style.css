@@ -13,6 +13,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
 }
 
 .container {
@@ -26,6 +27,7 @@ body {
     width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+    overflow: hidden;
 }
 
 .page-menu {
@@ -60,6 +62,39 @@ body {
     font-size: 32px;
     color: var(--primary-color-headlines);
 }
+.menu-panel {
+    position: absolute;
+    right: -264px;
+    top: 0;
+    width: 264px;
+    height: 519px;
+    background-color: var(--primary-color-buttons);
+    font-size: 32px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 32px;
+    box-sizing: border-box;
+    transition: right 1s ease-in-out;
+}
+
+.menu-panel ul {
+    list-style: none;
+    padding: 0;
+}
+
+.menu-panel ul li {
+    margin-bottom: 32px;
+}
+
+.menu-panel ul li a {
+    color: var(--primary-color-text-dark);
+    text-decoration: none;
+}
+
+.menu-panel.active {
+    right: 0;
+}
+
 
 .profile {
     text-align: center;
