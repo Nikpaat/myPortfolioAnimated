@@ -167,13 +167,14 @@ hr {
     margin: 15px;
 }
 
-.contact {
+.btn-contact {
     width: 100%;
     text-align: center;
     padding-top: 32px;
 }
 
-.contact button {
+.btn-contact button {
+
     border: none;
     text-transform: uppercase;
     font-size: 24px;
@@ -220,10 +221,6 @@ footer {
     display: none;
 }
 
-.contact-form {
-    display: none;
-}
-
 .contact-details {
     display: none;
 }
@@ -235,6 +232,51 @@ footer {
 .contact-intro {
     display: none;
 }
+.contact-form {
+    display: none;
+}
+.contact-form-mobile {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+}
+
+.contact-form-mobile form {
+    text-align: start;
+    box-sizing: border-box;
+    padding: 32px;
+}
+
+input, textarea {
+    width: 100%;
+    background-color: var(--primary-color-buttons);
+
+}
+
+input {
+    height: 34px;
+}
+
+.contact-form-mobile button {
+    background-color: var(--primary-color-headlines);
+    color: var(--primary-color-background);
+    text-transform: none;
+    margin-left: 0;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: var(--primary-color-headlines);
+
+}
+
 
 @media (min-width: 600px) and (max-width: 1024px) {
     .hamburger {

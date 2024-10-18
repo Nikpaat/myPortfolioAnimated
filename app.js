@@ -3,6 +3,19 @@ const menuPanel = document.querySelector('.menu-panel'); // Määrame muutujale 
 const menuLinks = document.querySelectorAll('.menu-panel a'); // Määrame muutujale menuLinks kõik HTML-sildid, mis asuvad menüü paneeli sees
 const frameImage = document.querySelector('#frame'); // Valime HTML elemendi, millel on id 'frame'
 const images = ['1.jpg', '2.jpg', '3.webp','4.webp', '5.webp', '6.webp']; // Piltide nimede massiiv
+const btnContactMe = document.querySelector('#btn-contact-me');
+const modal = document.querySelector('.modal');
+
+btnContactMe.addEventListener('click', () => {
+    modal.Style.display = 'block';
+
+});
+window.onclick = (event) => {
+    if(event.target == modal){
+        modal.style.display = 'none';
+    }
+
+}
 
 let currentImageIndex = 0; // Hoiab praegu valitud pildi indeksit, alustades esimesest (indeks 0)
 
